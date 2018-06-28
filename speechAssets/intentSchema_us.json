@@ -1,0 +1,59 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "trip wagon",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "FullDayTripIntent",
+                    "slots": [
+                        {
+                            "name": "city",
+                            "type": "AMAZON.AT_CITY"
+                        },
+                        {
+                            "name": "Time",
+                            "type": "AMAZON.DURATION"
+                        }
+                    ],
+                    "samples": [
+                        "Plan me a {Time} trip to {city}",
+                        "Plan a {Time} trip for me in {city}",
+                        "Plan a {Time} trip for me at {city}",
+                        "Plan a trip to {city} for {Time} long",
+                        "Plan me a trip to {city} for {Time}",
+                        "Plan a trip to {city} for {Time}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "DurationTime",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Full Day"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Half Day"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

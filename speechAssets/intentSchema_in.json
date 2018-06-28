@@ -1,0 +1,738 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "trip wagon",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "FullDayTripIntent",
+                    "slots": [
+                        {
+                            "name": "city",
+                            "type": "ACITY"
+                        },
+                        {
+                            "name": "Time",
+                            "type": "AMAZON.DURATION"
+                        }
+                    ],
+                    "samples": [
+                        "plan me a {Time} trip to {city}",
+                        "Plan a {Time} trip for me in {city}",
+                        "Plan a {Time} trip for me at {city}",
+                        "Plan a trip to {city} for {Time} long",
+                        "Plan me a trip to {city} for {Time}",
+                        "Plan a trip to {city} for {Time}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "DurationTime",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Full Day"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Half Day"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ACITY",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Imphal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Thiruvananthapuram"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bangalore",
+                                "synonyms": [
+                                    "Bengaluru"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Silvassa",
+                                "synonyms": [
+                                    "Silvasa"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Itanagar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dispur"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Aizawal",
+                                "synonyms": [
+                                    "Aizawl"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ranchi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jharkhand"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gurugram"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gurgaon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Puri"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Konark"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Odisha"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Raipur"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Chattisgarh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pathankot"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Amritsar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Andaman and Nicobar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lakshadweep"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bandhavgarh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Khujurao"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dal Lake"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Loktak Lake"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Manipur"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dimapur"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kohima"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kaziranga"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Assam"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Indore"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Madhya Pradesh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bhopal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tawang"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gandikota"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Araku Valley"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kutch"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sandakphu"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Rameshwaram"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Vellore"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kodaikanal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Coonoor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Thekkady"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kovalam"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cochin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Wayanad"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Munnar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gokarna"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ellora"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hampi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sakleshpur"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dandeli"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Coorg"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bandipur"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Chikmagalur"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Karnataka"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kolad"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Panchgani"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mahabaleshwar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kamshet"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lonavala"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nagpur"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pune"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mount Abu"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bikaner"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pushkar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ranthambore"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jaisalmer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mathura"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jodhpur"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Arunachal Pradesh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Andhra Pradesh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bhubaneshwar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Orissa"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "West Bengal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Agartala"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tripura"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mizoram"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Meghalaya"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pondicherry"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Chennai"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tamil Nadu"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Corbett National Park"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Haridwar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Uttarakhand"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Uttaranchal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gulmarg"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bir"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Leh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ladakh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dharamshala"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dalhousie"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kasol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gangtok"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jammu and Kashmir"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kashmir"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jammu"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Uttar Pradesh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Himachal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Himachal Pradesh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Manali"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bihar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Patna"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kanpur"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Varanasi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Agra"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ooty"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mysore"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nagaland"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Rajasthan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jaipur"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nainital"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dehradun"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Shimla"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Worli"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gandhinagar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Panaji"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Maharashtra"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Haryana"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gujarat"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Daman and Diu"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ahmedabad"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hyderabad"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lucknow"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Chandigarh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Darjeeling"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sikkim"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Goa"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Udaipur"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kerala"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kolkata"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "New Delhi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Delhi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mumbai"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
